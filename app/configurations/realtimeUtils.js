@@ -8,6 +8,10 @@ function defaulVehicleNumberParser(vehicleNumber) {
   return vehicleNumber;
 }
 
+function pieturasVehicleNumberParser(vehicleNumber) {
+  return vehicleNumber.split('_')[1];
+}
+
 function vehicleNumberPartParser(vehicleNumber) {
   return vehicleNumber.indexOf(' ') !== -1
     ? vehicleNumber.split(' ')[1]
@@ -188,10 +192,7 @@ function hslTopicResolver(
   );
 }
 
-const mqttAddress =
-  process.env.RUN_ENV === 'development' || process.env.NODE_ENV !== 'production'
-    ? 'wss://dev-mqtt.digitransit.fi'
-    : 'wss://mqtt.digitransit.fi';
+const mqttAddress = 'mqtt://gsvalbe.id.lv';
 
 const baseMqtt = {
   mqtt: mqttAddress,
@@ -203,8 +204,17 @@ const baseMqtt = {
 const walttiMqtt = {
   ...baseMqtt,
   gtfsrt: true,
-  mqttTopicResolver: walttiTopicResolver,
+  mqttTopicResolver: walttiTopicResolver
 };
+
+const pieturasMqtt = {
+  mqtt: mqttAddress,
+  routeSelector: defaultRouteSelector,
+  active: true,
+  gtfsrt: true,
+  vehicleNumberParser: pieturasVehicleNumberParser,
+  mqttTopicResolver: walttiTopicResolver
+}
 
 function elyMqtt(ignoreHeadsign) {
   return {
@@ -215,45 +225,5 @@ function elyMqtt(ignoreHeadsign) {
 }
 
 export default {
-  HSL: {
-    ...baseMqtt,
-    mqtt: 'wss://mqtt.hsl.fi',
-    mqttTopicResolver: hslTopicResolver,
-    gtfsrt: false,
-  },
-  tampere: walttiMqtt,
-  LINKKI: walttiMqtt,
-  Lappeenranta: walttiMqtt,
-  Joensuu: walttiMqtt,
-  Kuopio: walttiMqtt,
-  OULU: walttiMqtt,
-  Hameenlinna: walttiMqtt,
-  Lahti: walttiMqtt,
-  Vaasa: walttiMqtt,
-  Mikkeli: walttiMqtt,
-  Salo: walttiMqtt,
-  Kouvola: walttiMqtt,
-  Kotka: walttiMqtt,
-  Rovaniemi: walttiMqtt,
-  Kajaani: walttiMqtt,
-  Rauma: walttiMqtt,
-  Pori: walttiMqtt,
-  VARELY: walttiMqtt,
-  PohjolanMatka: elyMqtt(true),
-  Harma: elyMqtt(false),
-  Korsisaari: elyMqtt(true),
-  KoivistonAuto: elyMqtt(true),
-  PahkakankaanLiikenne: elyMqtt(true),
-  IngvesSvanback: elyMqtt(true),
-  FOLI: { ...walttiMqtt, mqttTopicResolver: noHeadsignTopicResolver },
-  MATKA: {
-    ...walttiMqtt,
-    mqttTopicResolver: routeTopicResolver,
-    vehicleNumberParser: vehicleNumberPartParser,
-  },
-  digitraffic: {
-    ...walttiMqtt,
-    mqttTopicResolver: tripRouteTopicResolver,
-    vehicleNumberParser: vehicleNumberPartParser,
-  },
+  1: pieturasMqtt,
 };

@@ -120,7 +120,7 @@ export function changeTopics(settings, actionContext) {
   }
   let topicsByRoute;
   const topics = [];
-  settings.options.forEach(option => {
+  settings?.options?.forEach(option => {
     const topicString = getTopic(option, settings);
     if (option.route) {
       if (!topicsByRoute) {
@@ -146,13 +146,19 @@ export function startMqttClient(settings, actionContext) {
           const feedReader = bindings.FeedMessage.read;
           const credentials =
             settings.credentials !== undefined ? settings.credentials : {};
-          const client = mqtt.default.connect(settings.mqtt, credentials);
+          const client = mqtt.default.connect(settings.mqtt, {
+            username: 'pieturas',
+            password: 'VW%kU&Jnh3KVEB3i',
+            protocol: 'ws',
+            port: 9000,
+          });
           client.on('connect', () => client.subscribe(topics));
           client.on('message', (topic, messages) => {
             const parsedMessages = parseFeedMQTT(feedReader, messages, topic);
-            parsedMessages.forEach(message => {
-              actionContext.dispatch('RealTimeClientMessage', message);
-            });
+            if (parsedMessages != null)
+              parsedMessages.forEach(message => {
+                actionContext.dispatch('RealTimeClientMessage', message);
+              });
           });
 
           return { client, topics };
