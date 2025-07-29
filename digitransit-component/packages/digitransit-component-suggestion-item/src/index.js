@@ -112,6 +112,7 @@ function getIconProperties(
     ['localadmin', 'city'],
     ['neighbourhood', 'city'],
     ['route-BUS', 'mode-bus'],
+    ['route-TROLLEYBUS', 'mode-trolleybus'],
     ['route-TRAM', 'mode-tram'],
     ['route-RAIL', 'mode-rail'],
     ['route-SUBWAY', 'subway'],
@@ -128,6 +129,7 @@ function getIconProperties(
     ['ownLocations', 'star'],
     ['back', 'arrow'],
     ['futureRoute', 'future-route'],
+    ['TROLLEYBUS-default', { icon: 'search-trolleybus-stop-default', color: 'mode-trolleybus' }],
     ['BUS-default', { icon: 'search-bus-stop-default', color: 'mode-bus' }],
     [
       'BUS-EXPRESS-default',
@@ -542,6 +544,7 @@ SuggestionItem.defaultProps = {
   },
   modeIconColors: {
     'mode-bus': '#007ac9',
+    'mode-trolleybus': '#904040',
     'mode-rail': '#8c4799',
     'mode-tram': '#008151',
     'mode-metro': '#ed8c00',

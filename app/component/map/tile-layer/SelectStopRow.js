@@ -51,6 +51,12 @@ function SelectStopRow(
         : 'icon-icon_bus-stop-lollipop';
       iconOptions.className = 'bus-stop';
       break;
+    case 'TROLLEYBUS':
+      iconOptions.iconId = terminal
+        ? 'icon-icon_trolleybus'
+        : 'icon-icon_trolleybus-stop-lollipop';
+      iconOptions.className = 'trolleybus-stop';
+      break;
     case 'bus-express':
       iconOptions.iconId = terminal
         ? 'icon-icon_bus'

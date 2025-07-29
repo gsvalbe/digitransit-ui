@@ -2990,6 +2990,8 @@ enum Mode {
   BICYCLE
   "BUS"
   BUS
+  "TROLLEYBUS"
+  TROLLEYBUS
   "CABLE_CAR"
   CABLE_CAR
   "CAR"

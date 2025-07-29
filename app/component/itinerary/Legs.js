@@ -210,6 +210,7 @@ export default class Legs extends React.Component {
         );
       } else if (
         (leg.mode === 'BUS' ||
+          leg.mode === 'TROLLEYBUS' ||
           leg.mode === 'TRAM' ||
           leg.mode === 'RAIL' ||
           leg.mode === 'SUBWAY' ||

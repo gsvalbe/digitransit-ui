@@ -106,7 +106,7 @@ export const getMapLayerOptions = (options = {}) => {
       isSelected: false,
     },
   };
-  const allModes = ['bus', 'tram', 'rail', 'subway', 'ferry', 'funicular'];
+  const allModes = ['bus', 'trolleybus', 'tram', 'rail', 'subway', 'ferry', 'funicular'];
   const { lockedMapLayers, selectedMapLayers } = {
     lockedMapLayers: [],
     selectedMapLayers: [],

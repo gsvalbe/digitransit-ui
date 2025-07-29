@@ -3,6 +3,7 @@ import React from 'react';
 import Airplane from './assets/airplane.svg';
 import Arrow from './assets/arrow.svg';
 import Bus from './assets/bus.svg';
+import Trolleybus from './assets/trolleybus.svg';
 import Busstop from './assets/bus_stop.svg';
 import City from './assets/city.svg';
 import Edit from './assets/edit.svg';
@@ -38,6 +39,7 @@ import SelectFromMap from './assets/select-from-map.svg';
 import CautionWhite from './assets/caution_white_exclamation.svg';
 import Trash from './assets/trash.svg';
 import ModeBus from './assets/mode_bus.svg';
+import ModeTrolleybus from './assets/mode_trolleybus.svg';
 import ModeBusExpress from './assets/bus-express.svg';
 import ModeBusReplacement from './assets/bus-replacement.svg';
 import ModeSpeedTram from './assets/speedtram.svg';
@@ -60,6 +62,7 @@ import RailWaltti from './assets/rail-waltti.svg';
 import TramWaltti from './assets/tram-waltti.svg';
 import Check from './assets/check.svg';
 import SearchBusStopDefault from './assets/search-bus-stop-default.svg';
+import SearchTrolleybusStopDefault from './assets/search-trolleybus-stop-default.svg';
 import SearchBusStopExpressDefault from './assets/search-bus-stop-express-default.svg';
 import SearchSpeedTramStopDefault from './assets/search-speedtram-stop-default.svg';
 import SearchRailStopDefault from './assets/search-rail-stop-default.svg';
@@ -86,6 +89,7 @@ const IconMap = style => {
     airplane: <Airplane style={style} />,
     arrow: <Arrow style={style} />,
     bus: <Bus style={style} />,
+    trolleybus: <Trolleybus style={style} />,
     busstop: <Busstop style={style} />,
     caution: <CautionWhite style={style} />,
     city: <City style={style} />,
@@ -123,6 +127,7 @@ const IconMap = style => {
     'caution-white': <CautionWhite style={style} />,
     trash: <Trash style={style} />,
     'mode-bus': <ModeBus style={style} />,
+    'mode-trolleybus': <ModeTrolleybus style={style} />,
     'mode-bus-express': <ModeBusExpress style={style} />,
     'mode-bus-local': <ModeBusLocal style={style} />,
     'mode-bus-replacement': <ModeBusReplacement style={style} />,
@@ -133,6 +138,7 @@ const IconMap = style => {
     'mode-ferry': <ModeFerry style={style} />,
     'mode-citybike': <ModeBikeRentalStation style={style} />,
     'mode-digitransit-bus': <SearchBusStationDigitransit style={style} />,
+    'mode-digitransit-trolleybus': <SearchBusStationDigitransit style={style} />,
     'mode-digitransit-rail': <SearchRailStationDigitransit style={style} />,
     'mode-digitransit-ferry': <SearchFerryDigitransit style={style} />,
     'mode-digitransit-tram': <ModeDigiTram style={style} />,
@@ -150,6 +156,7 @@ const IconMap = style => {
     'search-street-name': <SearchStreetName style={style} />,
     check: <Check style={style} />,
     'search-bus-stop-default': <SearchBusStopDefault style={style} />,
+    'search-trolleybus-stop-default': <SearchTrolleybusStopDefault style={style} />,
     'search-bus-stop-express-default': (
       <SearchBusStopExpressDefault style={style} />
     ),
@@ -175,6 +182,7 @@ const IconMap = style => {
       <SearchBusStationDigitransit style={style} />
     ),
     'search-bus-stop-digitransit': <SearchBusStopDigitransit style={style} />,
+    'search-trolleybus-stop-digitransit': <SearchBusStopDigitransit style={style} />,
     'search-bustram-stop-digitransit': (
       <SearchBusTramStopDigitransit style={style} />
     ),

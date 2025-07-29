@@ -228,6 +228,7 @@ function hasFavourites(searchContext) {
 const routeLayers = [
   'route-TRAM',
   'route-BUS',
+  'route-TROLLEYBUS',
   'route-RAIL',
   'route-FERRY',
   'route-SUBWAY',

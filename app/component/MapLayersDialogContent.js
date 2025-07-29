@@ -49,6 +49,7 @@ const mapLayersconfigShape = PropTypes.shape({
   }),
   transportModes: PropTypes.shape({
     bus: transportModeconfigShape,
+    trolleybus: transportModeconfigShape,
     citybike: transportModeconfigShape,
     ferry: transportModeconfigShape,
     rail: transportModeconfigShape,
@@ -189,6 +190,19 @@ class MapLayersDialogContent extends React.Component {
               onChange={e => {
                 this.updateStopSetting({ bus: e.target.checked });
                 sendLayerChangeAnalytic('BusStop', e.target.checked);
+              }}
+            />
+          )}
+          {isTransportModeEnabled(transportModes.trolleybus) && (
+            <Checkbox
+              large
+              checked={stop.trolleybus}
+              disabled={!!this.props.mapLayerOptions?.stop?.trolleybus?.isLocked}
+              defaultMessage="Trolleybus stop"
+              labelId="map-layer-stop-trolleybus"
+              onChange={e => {
+                this.updateStopSetting({ trolleybus: e.target.checked });
+                sendLayerChangeAnalytic('TrolleybusStop', e.target.checked);
               }}
             />
           )}

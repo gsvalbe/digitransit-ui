@@ -315,6 +315,7 @@ const MapLayerOptionShape = PropTypes.shape({
 
 const MapLayerOptionStopOrTerminalShape = PropTypes.shape({
   bus: PropTypes.shape(MapLayerOptionShape),
+  trolleybus: PropTypes.shape(MapLayerOptionShape),
   rail: PropTypes.shape(MapLayerOptionShape),
   tram: PropTypes.shape(MapLayerOptionShape),
   subway: PropTypes.shape(MapLayerOptionShape),

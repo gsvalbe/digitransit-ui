@@ -421,6 +421,10 @@
           color: $bus-color;
         }
 
+        &.trolleybus-stop {
+          color: $trolleybus-color;
+        }
+
         &.bus-express {
           color: $bus-express-color;
         }

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="24"
+   height="24"
+   viewBox="0 0 32 32"
+   fill="none"
+   version="1.1"
+   id="svg2"
+   sodipodi:docname="search-trolleybus-stop-default.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="namedview2"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="16.9375"
+     inkscape:cx="3.5719557"
+     inkscape:cy="11.365314"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <rect
+     x="14.5"
+     y="22"
+     width="3"
+     height="8"
+     rx="1.5"
+     fill="#333333"
+     id="rect1" />
+  <circle
+     cx="16"
+     cy="13"
+     r="11"
+     fill="#007AC9"
+     id="circle1" />
+  <path
+     d="M8 7C8 5.89543 8.89543 5 10 5H22C23.1046 5 24 5.89543 24 7V19C24 20.1046 23.1046 21 22 21H10C8.89543 21 8 20.1046 8 19V7Z"
+     fill="#007AC9"
+     id="path1" />
+  <path
+     d="m 20.68,8.3877731 c -1.6,-0.2 -3.06,-0.3 -4.66,-0.3 -1.66,0 -3.1,0.08 -4.68,0.3 -0.48,0.06 -0.76,0.3400007 -0.76,0.7600051 v 9.3600078 c 0,0.3 0.22,0.5 0.42,0.56 l 0.6,0.1 v 1.26 c 0,0.14 0.12,0.24 0.28,0.24 h 0.96 c 0.12,0 0.24,-0.1 0.24,-0.24 v -1.12 c 0.78,0.1 1.84,0.14 2.9,0.14 1.08,0 2.18,-0.04 2.94,-0.14 v 1.12 c 0,0.14 0.14,0.24 0.26,0.24 h 0.96 c 0.16,0 0.28,-0.1 0.28,-0.24 v -1.26 l 0.6,-0.1 c 0.22,-0.06 0.42,-0.24 0.42,-0.56 V 9.1477782 c 0,-0.4200044 -0.28,-0.7000051 -0.76,-0.7600051 z m -0.1,7.2400129 c 0,0.26 -0.1,0.4 -0.42,0.44 -1.14,0.2 -2.64,0.4 -4.1,0.4 -1.54,0 -3,-0.18 -4.16,-0.44 -0.32,-0.06 -0.44,-0.18 -0.44,-0.44 V 9.7477842 c 0,-0.2600028 0.12,-0.4400044 0.44,-0.4400044 l 8.26,0.04 c 0.32,0 0.42,0.1800014 0.42,0.4400038 z m -8.26,2.58 c -0.3,-0.02 -0.54,-0.26 -0.54,-0.54 0.02,-0.26 0.26,-0.5 0.54,-0.5 0.28,0 0.52,0.24 0.52,0.5 0,0.3 -0.24,0.54 -0.52,0.54 z m 7.3,0 c -0.28,-0.02 -0.52,-0.26 -0.52,-0.54 0.02,-0.26 0.26,-0.5 0.52,-0.5 0.28,0 0.52,0.24 0.52,0.5 0,0.3 -0.24,0.54 -0.52,0.54 z"
+     fill="#ffffff"
+     id="path2" />
+  <g
+     id="g2"
+     transform="translate(-0.12995675,-0.51168508)">
+    <rect
+       style="fill:#ffffff;stroke-width:0.0139288"
+       id="rect1-4"
+       width="0.74359506"
+       height="2.7285261"
+       x="16.827406"
+       y="6.2712274"
+       ry="0.42384875" />
+    <rect
+       style="fill:#ffffff;stroke-width:0.0137965"
+       id="rect1-5"
+       width="0.74359506"
+       height="2.6769423"
+       x="14.596623"
+       y="6.2712274"
+       ry="0.41583568" />
+  </g>
+</svg>

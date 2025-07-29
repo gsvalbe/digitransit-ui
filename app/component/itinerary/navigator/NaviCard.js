@@ -16,6 +16,7 @@ const iconMap = {
   WALK: 'icon-icon_walk',
   WAIT: 'icon-icon_navigation_wait',
   BUS: 'icon-icon_bus',
+  TROLLEYBUS: 'icon-icon_trolleybus',
   RAIL: 'icon-icon_rail',
   SUBWAY: 'icon-icon_subway',
   TRAM: 'icon-icon_tram',

@@ -4,21 +4,21 @@ import trimStart from 'lodash/trimStart';
 import toPairs from 'lodash/toPairs';
 import { otpToLocation, locationToOTP, locationToUri } from './otpStrings';
 
-export const TAB_NEARBY = 'lahellasi';
-export const TAB_FAVOURITES = 'suosikit';
-export const PREFIX_ROUTES = 'linjat';
+export const TAB_NEARBY = 'nearby';
+export const TAB_FAVOURITES = 'favorites';
+export const PREFIX_ROUTES = 'route';
 export const PREFIX_NEARYOU = TAB_NEARBY;
-export const PREFIX_STOPS = 'pysakit';
-export const PREFIX_BIKESTATIONS = 'pyoraasemat';
-export const PREFIX_BIKEPARK = 'pyoraparkit';
-export const PREFIX_CARPARK = 'autoparkit';
-export const PREFIX_TERMINALS = 'terminaalit';
-export const PREFIX_ITINERARY_SUMMARY = 'reitti';
-export const PREFIX_DISRUPTION = 'hairiot';
-export const PREFIX_TIMETABLE = 'aikataulu';
+export const PREFIX_STOPS = 'stop';
+export const PREFIX_BIKESTATIONS = 'bikestation';
+export const PREFIX_BIKEPARK = 'bikepark';
+export const PREFIX_CARPARK = 'carpark';
+export const PREFIX_TERMINALS = 'terminal';
+export const PREFIX_ITINERARY_SUMMARY = 'itinerary';
+export const PREFIX_DISRUPTION = 'disruption';
+export const PREFIX_TIMETABLE = 'timetable';
 export const stopUrl = id => id;
-export const EMBEDDED_SEARCH_PATH = '/haku';
-export const PREFIX_RENTALVEHICLES = 'skuutit';
+export const EMBEDDED_SEARCH_PATH = '/search';
+export const PREFIX_RENTALVEHICLES = 'rental';
 
 /**
  * Join argument with slash separator.

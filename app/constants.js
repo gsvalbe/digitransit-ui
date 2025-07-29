@@ -20,6 +20,8 @@ export const TransportMode = Object.freeze({
   Airplane: 'AIRPLANE',
   /** Taking the bus */
   Bus: 'BUS',
+  /** Taking the trolleybus */
+  Trolleybus: 'TROLLEYBUS',
   /** Cycling with a city bike */
   Citybike: 'CITYBIKE',
   /** Taking the ferry */

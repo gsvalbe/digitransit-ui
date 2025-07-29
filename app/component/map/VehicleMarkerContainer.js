@@ -8,6 +8,7 @@ import IconMarker from './IconMarker';
 
 const MODES_WITH_ICONS = [
   'bus',
+  'trolleybus',
   'bus-express',
   'tram',
   'rail',

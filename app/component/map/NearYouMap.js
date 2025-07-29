@@ -188,7 +188,7 @@ function NearYouMap(
       if (stopsAndStations.length > 0) {
         const firstStop = stopsAndStations[0];
         const shouldFetch =
-          (mode !== 'BUS' && mode !== 'TRAM') ||
+          (mode !== 'BUS' && mode !== 'TRAM' && mode !== 'TROLLEYBUS') ||
           favouriteIds.has(firstStop.gtfsId);
         if (shouldFetch && !isEqual(firstStop, walk.stop)) {
           fetchPlan(firstStop);

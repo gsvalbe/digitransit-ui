@@ -118,6 +118,10 @@
     &.bus {
       background: url(last_stop_svg($bus-color));
     }
+    
+    &.trolleybus {
+      background: url(last_stop_svg($trolleybus-color));
+    }
 
     &.tram {
       background: url(last_stop_svg($tram-color));

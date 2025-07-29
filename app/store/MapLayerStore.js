@@ -16,6 +16,7 @@ class MapLayerStore extends Store {
     parkAndRideForBikes: false,
     stop: {
       bus: true,
+      trolleybus: true,
       ferry: true,
       rail: true,
       subway: true,
@@ -24,6 +25,7 @@ class MapLayerStore extends Store {
     },
     terminal: {
       bus: true,
+      trolleybus: true,
       ferry: true,
       rail: true,
       subway: true,
@@ -117,6 +119,7 @@ export const mapLayerShape = PropTypes.shape({
   parkAndRideForBikes: PropTypes.bool,
   stop: PropTypes.shape({
     bus: PropTypes.bool,
+    trolleybus: PropTypes.bool,
     ferry: PropTypes.bool,
     rail: PropTypes.bool,
     subway: PropTypes.bool,
