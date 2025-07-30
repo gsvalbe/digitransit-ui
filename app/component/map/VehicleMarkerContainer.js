@@ -75,14 +75,13 @@ function VehicleMarkerContainer(props, { config }) {
       const routeParts = message.route?.split(':');
       const feed = routeParts?.[0];
       const id = routeParts?.[1]; // route id without feed
-      const { ignoreHeadsign } = config.realTime[feed];
       const desc = id ? props.topics?.find(t => t.route === id) : undefined;
       return shouldShowVehicle(
         message,
         props.direction || desc?.direction,
         props.tripStart || desc?.tripStart,
         props.pattern,
-        ignoreHeadsign ? undefined : props.headsign,
+        props.headsign,
         desc?.tripId,
       );
     },
@@ -109,9 +108,7 @@ function VehicleMarkerContainer(props, { config }) {
       mode = message.mode;
     }
     const feed = message.route?.split(':')[0];
-    let vehicleNumber = message.shortName
-      ? config.realTime[feed].vehicleNumberParser(message.shortName)
-      : r;
+    let vehicleNumber = message.shortName ?? '?';
     // Fallback to a question mark if the vehicle number is too long to fit in the icon
     vehicleNumber = vehicleNumber.length > 5 ? '?' : vehicleNumber;
     return (

@@ -49,6 +49,7 @@ export default function PopupHeader({
         />
         {startTimeEl}
       </h1>
+      {/* TODO: insert pattern.headsign */}
     </div>
   );
 }

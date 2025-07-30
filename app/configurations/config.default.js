@@ -301,7 +301,7 @@ export default {
       'mode-replacement-bus': '#DC0451',
     },
   },
-  iconModeSet: 'digitransit',
+  iconModeSet: 'default',
   fontWeights: {
     medium: 700,
   },

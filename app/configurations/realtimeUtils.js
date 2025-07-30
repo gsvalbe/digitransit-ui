@@ -212,7 +212,6 @@ const pieturasMqtt = {
   routeSelector: defaultRouteSelector,
   active: true,
   gtfsrt: true,
-  vehicleNumberParser: pieturasVehicleNumberParser,
   mqttTopicResolver: walttiTopicResolver
 }
 

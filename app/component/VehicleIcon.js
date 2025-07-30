@@ -86,6 +86,7 @@ const VehicleIcon = ({
           textAnchor="middle"
           fontSize={getFontSize(vehicleNumber.length)}
           fontStyle="condensed"
+          color='#000000'
         >
           <tspan x="40" y={35 + getTextOffSet(vehicleNumber.length)}>
             {vehicleNumber}
@@ -96,6 +97,7 @@ const VehicleIcon = ({
       <svg
         id={id}
         viewBox="0 0 120 120"
+        style={{ color: color ? `#${color}` : null }}
         className={cx('icon', 'small-vehicle-icon', className)}
         ref={el => scrollIntoView && el && el.scrollIntoView()}
       >

@@ -812,22 +812,22 @@
 </symbol>
 
 <symbol id="icon-icon_vehicle-live-marker" viewBox="0 0 80 80">
-  <path d="M12,-0.5 C15.4517797,-0.5 18.5767797,0.899110157 20.8388348,3.16116524 C23.1008898,5.42322031 24.5,8.54822031 24.5,12 C24.5,15.3285348 23.1989974,18.3531937 21.0684384,20.6028911 L21.0684384,20.6028911 L12.0001286,29.6777981 L3.16116524,20.8388348 C0.899110157,18.5767797 -0.5,15.4517797 -0.5,12 C-0.5,8.54822031 0.899110157,5.42322031 3.16116524,3.16116524 C5.42322031,0.899110157 8.54822031,-0.5 12,-0.5 Z" stroke="#FFFFFF"/>
-  <circle fill="#FFFFFF" cx="12" cy="12" r="10.5"/>
+  <path d="M12,-0.5 C15.4517797,-0.5 18.5767797,0.899110157 20.8388348,3.16116524 C23.1008898,5.42322031 24.5,8.54822031 24.5,12 C24.5,15.3285348 23.1989974,18.3531937 21.0684384,20.6028911 L21.0684384,20.6028911 L12.0001286,29.6777981 L3.16116524,20.8388348 C0.899110157,18.5767797 -0.5,15.4517797 -0.5,12 C-0.5,8.54822031 0.899110157,5.42322031 3.16116524,3.16116524 C5.42322031,0.899110157 8.54822031,-0.5 12,-0.5 Z" fill="#000000"/>
+  <circle stroke="#000000" cx="12" cy="12" r="10.5"/>
 </symbol>
 
 <symbol id="icon-icon_vehicle-live-marker-without-direction" viewBox="0 0 80 80">
-  <circle cx="13" cy="13" r="12.5" fill="#000" fill-opacity=".1"/>
-  <circle cx="13" cy="13" r="12.5" stroke="#fff"/>
-  <circle cx="13" cy="13" r="10.5" fill="#fff"/>
+  <circle cx="13" cy="13" r="12.5" stroke="#000000" fill-opacity=".1"/>
+  <circle cx="13" cy="13" r="12.5" fill="#fff"/>
+  <circle cx="13" cy="13" r="10.5" stroke="#000000"/>
 </symbol>
 
 <symbol id="icon-icon_all-vehicles-small" viewBox="0 0 10 10">
-  <path d="M4.735 9.508L5 9.773l.265-.265 2.121-2.122a3.375 3.375 0 10-4.773 0l2.122 2.122z" fill="#333" stroke="#fff" stroke-width=".75"/>
+  <path d="M4.735 9.508L5 9.773l.265-.265 2.121-2.122a3.375 3.375 0 10-4.773 0l2.122 2.122z" stroke="#fff" stroke-width=".75"/>
 </symbol>
 
 <symbol id="icon-icon_all-vehicles-small-without-direction" viewBox="0 0 9 10">
-  <circle cx="4.24" cy="5" r="3.375" fill="#333" stroke="#fff" stroke-width=".75"/>
+  <circle cx="4.24" cy="5" r="3.375" stroke="#fff" stroke-width=".75"/>
 </symbol>
 
 <symbol id="icon-icon_show-on-map" viewBox="0 0 24 25">
