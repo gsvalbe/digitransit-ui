@@ -98,6 +98,26 @@ const translations = {
     'nearby-stops-teaser-content':
       'Fordonen och tidtabellerna i realtid för hållplatserna nära dig på kartan.',
   },
+  lv: {
+    'close-teaser-modal': 'Close',
+    'pick-mode': 'Select a transport mode',
+    'pick-mode-airplane': 'Flight',
+    'pick-mode-bus': 'Bus',
+    'pick-mode-citybike': 'Citybike',
+    'pick-mode-ferry': 'Ferry',
+    'pick-mode-rail': 'Rail',
+    'pick-mode-subway': 'Metro',
+    'pick-mode-tram': 'Tram',
+    'placeholder-destination': 'Enter destination',
+    'placeholder-origin': 'Enter origin',
+    'placeholder-route-stop-station': 'Enter route, stop or station',
+    'title-route-stop-station': 'Tuvumā esošās pieturas un maršruti',
+    'title-origin-to-destination': 'Where to?',
+    'use-own-position': 'Use current location',
+    'nearby-stops-teaser-header': 'Try the new map views showing nearby stops',
+    'nearby-stops-teaser-content':
+      'Real-time timetables for nearby stops and vehicles on map.',
+  },
 };
 
 export default translations;

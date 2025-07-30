@@ -163,7 +163,7 @@ export default {
   // not be computed
   suggestCarMinDistance: 2000,
   availableLanguages: [
-    'lv', // TODO: fix selector
+    'lv', 'en', // TODO: fix selector
   ],
   defaultLanguage: 'lv',
   timeZone: 'Europe/Riga',
@@ -174,13 +174,13 @@ export default {
     // Whether to show the left menu toggle button at all
     show: true,
     showDisruptions: true,
-    showLoginCreateAccount: true,
+    showLoginCreateAccount: false,
     showOffCanvasList: true,
     showFrontPageLink: true,
     stopMonitor: {
       show: false,
     },
-    showEmbeddedSearch: true,
+    showEmbeddedSearch: false,
   },
 
   itinerary: {
@@ -236,7 +236,7 @@ export default {
     showStopMarkerPopupOnMobile: true,
     showScaleBar: true,
     attribution:
-      '<a tabIndex="-1" href="http://osm.org/copyright" target="_blank">© OpenStreetMap</a>',
+      '<a tabIndex="-1" href="https://balticmaps.eu" target="_blank">© Jāņa sēta</a>',
 
     useModeIconsInNonTileLayer: false,
     // areBounds is for keeping map and user inside given area
@@ -278,15 +278,14 @@ export default {
 
   appBarStyle: 'default',
 
-  appBarLink: {
-    name: 'Par pakalpojumu',
-    href: 'https://gsvalbe.id.lv/pieturas',
-  },
+  appBarLink: {},
 
   colors: {
     topBarColor: '#001f5f',
     primary: '#001f5f',
     backgroundInfo: '#ebf6fd',
+    accessiblePrimary: '#0074be',
+    hover: '#0062a1',
     iconColors: {
       'mode-airplane': '#0046ad',
       'mode-bus': '#0088ce',
@@ -400,15 +399,23 @@ export default {
   modePolygons: {},
 
   menu: {
-    copyright: { label: `© Digitransit ${YEAR}` },
+    copyright: { label: `© Gustavs Švalbe ${YEAR}` },
     content: [
       {
-        name: 'menu-feedback',
-        href: 'https://github.com/HSLdevcom/digitransit-ui/issues',
+        name: 'digitransit-platform',
+        href: 'https://digitransit.fi/en/',
       },
       {
-        name: 'about-this-service',
-        route: '/tietoja-palvelusta',
+        name: 'datasources',
+        href: 'https://gsvalbe.id.lv/pieturas/avoti.html',
+      },
+      {
+        name: 'menu-old-map',
+        href: 'https://gsvalbe.id.lv/pieturas/karte.html',
+      },
+      {
+        name: 'app',
+        href: 'https://play.google.com/store/apps/details?id=lv.swallowdev.pieturas',
       },
     ],
   },
@@ -443,28 +450,7 @@ export default {
 
   useRealtimeTravellerCapacities: false,
 
-  aboutThisService: {
-    en: [
-      {
-        header: 'About this service',
-        paragraphs: [
-          'The service covers public transport, walking, cycling, and some private car use. Service is built on Digitransit platform.',
-        ],
-      },
-      {
-        header: 'Digitransit platform',
-        paragraphs: [
-          "The route planner is based on the open source Digitransit service platform, which is an service maintained and developed by Helsinki Region Transport (HRT) Traffic Management Company Fintraffic Oy and Waltti Solutions Oy. Route suggestions are based on estimated times. Digitransit or other users of the information do not guarantee the realization of the proposed connection and do not compensate for any damages that may arise from the failure of the transport connection. The service users' information is not stored in the service.",
-        ],
-      },
-      {
-        header: 'Data sources',
-        paragraphs: [
-          "TODO",
-        ],
-      },
-    ],
-  },
+  aboutThisService: {},
 
   staticMessages: [],
 
@@ -557,9 +543,15 @@ export default {
   // Park and ride and car suggestions separated
   separatedParkAndRideSwitch: false,
 
-  showNearYouButtons: false,
-  nearYouModes: [],
-  narrowNearYouButtons: false,
+  showNearYouButtons: true,
+  nearYouModes: [
+    'favorite',
+    'bus',
+    'trolleybus',
+    'tram',
+    'rail',
+  ],
+  narrowNearYouButtons: true,
 
   /* Option to disable the "next" column of the Route panel as it can be confusing sometimes: https://github.com/mfdz/digitransit-ui/issues/167 */
   displayNextDeparture: true,

@@ -99,6 +99,7 @@ OriginToDestination.defaultProps = {
 const validNearYouModes = [
   'favorite',
   'bus',
+  'trolleybus',
   'tram',
   'rail',
   'subway',
