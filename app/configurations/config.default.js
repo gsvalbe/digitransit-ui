@@ -35,7 +35,7 @@ export default {
     ASSET_URL: process.env.ASSET_URL,
     OTP: `https://gsvalbe.id.lv/pieturas/otp/`,
     MAP: {
-      default: `https://wms.kartes.lv/${KIJS_KEY}/wgs/15/`,
+      default: `https://wms.kartes.lv/${KIJS_KEY}/wgs/15bw/`,
     },
     REALTIME_STOP_MAP: {
       default: `https://gsvalbe.id.lv/pieturas/otp/routers/default/vectorTiles/stops/`,
@@ -163,9 +163,9 @@ export default {
   // not be computed
   suggestCarMinDistance: 2000,
   availableLanguages: [
-    'en',
+    'lv', // TODO: fix selector
   ],
-  defaultLanguage: 'en',
+  defaultLanguage: 'lv',
   timeZone: 'Europe/Riga',
   allowLogin: false,
   allowFavouritesFromLocalstorage: true,

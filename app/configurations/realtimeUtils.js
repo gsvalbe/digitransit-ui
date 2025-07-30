@@ -33,7 +33,7 @@ function walttiTopicResolver(
     '/+/+/+/' +
     route +
     '/' +
-    direction +
+    '+' + // direction
     '/' +
     headsign +
     '/' +

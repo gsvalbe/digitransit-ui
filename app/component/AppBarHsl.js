@@ -57,6 +57,10 @@ const AppBarHsl = ({ lang, user, favourites }, context) => {
       name: 'en',
       url: `/en${location.pathname}${location.search}`,
     },
+    {
+      name: 'lv',
+      url: `/lv${location.pathname}${location.search}`,
+    },
   ];
 
   const { given_name, family_name } = user;
